@@ -67,43 +67,47 @@ export default function About() {
           <p className="about-text">
             My expertise spans across React, Node.js, Express.js, and modern web technologies. I'm obsessed with performance optimization, clean code, and creating animations that delight users. Every project I work on is an opportunity to push boundaries and explore new possibilities.
           </p>
-
-          <div className="about-highlights">
-            <div className="highlight">
-              <h4>Frontend</h4>
-              <p>React, TypeScript, GSAP, Tailwind CSS</p>
-            </div>
-            <div className="highlight">
-              <h4>Backend</h4>
-              <p>Node.js, Express.js, MongoDB, PostgreSQL</p>
-            </div>
-            <div className="highlight">
-              <h4>Tools</h4>
-              <p>Git, Docker, AWS, Webpack, Vite</p>
-            </div>
-          </div>
         </div>
 
         <div ref={imageRef} className="about-visual">
-          <div className="about-card">
-            <div className="card-content">
-              <div className="card-icon">💻</div>
-              <h3>Full Stack Developer</h3>
-              <p>Building complete web solutions from frontend to backend</p>
-            </div>
-          </div>
-          <div className="about-card card-2">
-            <div className="card-content">
-              <div className="card-icon">✨</div>
-              <h3>Creative Animator</h3>
-              <p>Crafting smooth, engaging animations with GSAP</p>
-            </div>
-          </div>
-          <div className="about-card card-3">
-            <div className="card-content">
-              <div className="card-icon">🚀</div>
-              <h3>Performance Focused</h3>
-              <p>Optimizing for speed and user experience</p>
+          <div className="cube-container">
+            <div className="cube">
+              <div className="cube-face front">
+                <div className="face-content">
+                  <div className="face-icon">⚛️</div>
+                  <p>React</p>
+                </div>
+              </div>
+              <div className="cube-face back">
+                <div className="face-content">
+                  <div className="face-icon">🔧</div>
+                  <p>Backend</p>
+                </div>
+              </div>
+              <div className="cube-face right">
+                <div className="face-content">
+                  <div className="face-icon">✨</div>
+                  <p>Animations</p>
+                </div>
+              </div>
+              <div className="cube-face left">
+                <div className="face-content">
+                  <div className="face-icon">🚀</div>
+                  <p>Performance</p>
+                </div>
+              </div>
+              <div className="cube-face top">
+                <div className="face-content">
+                  <div className="face-icon">💻</div>
+                  <p>Full Stack</p>
+                </div>
+              </div>
+              <div className="cube-face bottom">
+                <div className="face-content">
+                  <div className="face-icon">🎨</div>
+                  <p>Design</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

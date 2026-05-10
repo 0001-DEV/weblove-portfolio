@@ -4,59 +4,96 @@
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 60px;
 }
 
+.service-card-wrapper {
+  perspective: 1000px;
+}
+
 .service-card {
-  background: linear-gradient(135deg, rgba(0, 217, 255, 0.08), rgba(255, 0, 110, 0.05));
-  border: 1px solid rgba(0, 217, 255, 0.3);
-  padding: 40px 30px;
-  border-radius: 12px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  width: 100%;
+  height: 320px;
+  border-radius: 15px;
   overflow: hidden;
+  cursor: pointer;
+  border: 2px solid rgba(0, 217, 255, 0.3);
+  box-shadow: 0 10px 40px rgba(0, 217, 255, 0.1);
+}
+
+.card-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.top-slide {
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.15), rgba(0, 217, 255, 0.08));
+  border-bottom: 2px solid rgba(0, 217, 255, 0.3);
+  transform: translateY(0);
   gap: 15px;
-  cursor: pointer;
 }
 
-.service-card:hover {
-  border-color: var(--accent-1);
-  transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(0, 217, 255, 0.15);
+.bottom-slide {
+  background: #000000;
+  transform: translateY(100%);
+  gap: 20px;
 }
 
-.service-card h3 {
+.service-card:hover .top-slide {
+  transform: translateY(-100%);
+}
+
+.service-card:hover .bottom-slide {
+  transform: translateY(0);
+}
+
+.slide-icon {
+  font-size: 3.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.top-slide h3 {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #ffffff;
-  position: relative;
-  z-index: 1;
 }
 
-.service-card p {
+.bottom-slide p {
   color: #e0e0e0;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   line-height: 1.7;
-  position: relative;
-  z-index: 1;
-  flex-grow: 1;
 }
 
 .service-arrow {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--accent-1);
   transition: all 0.3s ease;
-  position: relative;
-  z-index: 1;
-  width: fit-content;
+  font-weight: bold;
 }
 
 .service-card:hover .service-arrow {
-  transform: translateX(10px);
+  transform: translateX(8px);
+  color: var(--accent-2);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 @media (max-width: 768px) {
@@ -66,6 +103,22 @@
   }
 
   .service-card {
-    padding: 30px 20px;
+    height: 280px;
+  }
+
+  .card-slide {
+    padding: 25px;
+  }
+
+  .slide-icon {
+    font-size: 3rem;
+  }
+
+  .top-slide h3 {
+    font-size: 1.1rem;
+  }
+
+  .bottom-slide p {
+    font-size: 0.9rem;
   }
 }

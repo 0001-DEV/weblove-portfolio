@@ -30,7 +30,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-container">
         <div className="navbar-logo">
-          <span className="gradient-text">weblove</span>
+          <img src="/icon-_2_.ico" alt="weblove" className="logo-icon" />
         </div>
 
         <button 

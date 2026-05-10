@@ -60,11 +60,21 @@ export default function Hero() {
           </p>
 
           <div ref={ctaRef} className="hero-cta">
-            <button className="btn btn-primary">
+            <button 
+              className="btn btn-primary"
+              onClick={() => {
+                document.getElementById('work').scrollIntoView({ behavior: 'smooth' })
+              }}
+            >
               <span>View My Work</span>
               <span className="btn-arrow">→</span>
             </button>
-            <button className="btn btn-secondary">
+            <button 
+              className="btn btn-secondary"
+              onClick={() => {
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+              }}
+            >
               <span>Get In Touch</span>
             </button>
           </div>

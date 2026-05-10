@@ -78,12 +78,18 @@ export default function Services() {
             <div
               key={idx}
               ref={el => cardsRef.current[idx] = el}
-              className="service-card"
+              className="service-card-wrapper"
             >
-              <div className="service-icon">{service.icon}</div>
-              <h3>{service.title}</h3>
-              <p>{service.description}</p>
-              <div className="service-arrow">→</div>
+              <div className="service-card">
+                <div className="card-slide top-slide">
+                  <div className="slide-icon">{service.icon}</div>
+                  <h3>{service.title}</h3>
+                </div>
+                <div className="card-slide bottom-slide">
+                  <p>{service.description}</p>
+                  <div className="service-arrow">→</div>
+                </div>
+              </div>
             </div>
           ))}
         </div>
