@@ -86,8 +86,15 @@ export default function Contact() {
       <div className="container contact-container">
         <div className="contact-header">
           <h2 className="section-title">
-            Let's <span className="gradient-text">Connect</span>
+            Let's Connect
           </h2>
+          <div className="qr-wrapper">
+            <p className="qr-label-top">Scan to chat on WhatsApp</p>
+            <div className="qr-image-container">
+              <img src="/PORTFOLIO-WHATSAPP.png" alt="WhatsApp QR Code" className="contact-qr" />
+            </div>
+            <p className="qr-label-bottom">📱 Point your camera here</p>
+          </div>
           <p className="contact-subtitle">
             Have a project in mind? I'd love to hear about it. Let's create something amazing together.
           </p>

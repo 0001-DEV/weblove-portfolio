@@ -140,7 +140,7 @@ export default function Work() {
     <section id="work" ref={sectionRef} className="work section">
       <div className="container">
         <h2 ref={titleRef} className="section-title">
-          Featured <span className="gradient-text">Work</span>
+          Featured Work
         </h2>
 
         <div className="projects-grid">

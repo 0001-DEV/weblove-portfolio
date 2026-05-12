@@ -57,8 +57,11 @@ export default function About() {
       <div className="container about-container">
         <div ref={contentRef} className="about-content">
           <h2 className="section-title">
-            About <span className="gradient-text">Me</span>
+            About Me
           </h2>
+          <a href="/PROPOSAL-CV.pdf" target="_blank" rel="noopener noreferrer" className="download-cv-btn">
+            View / Download CV
+          </a>
 
           <p className="about-text">
             I'm a passionate full-stack developer with a keen eye for design and a love for creating seamless digital experiences. With 5+ years of experience, I've worked with startups and enterprises to build scalable web applications that combine stunning interfaces with robust backend architecture.

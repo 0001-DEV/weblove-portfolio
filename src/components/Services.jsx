@@ -70,7 +70,7 @@ export default function Services() {
     <section id="services" ref={sectionRef} className="services section">
       <div className="container">
         <h2 className="section-title">
-          What I <span className="gradient-text">Offer</span>
+          What I Offer
         </h2>
 
         <div className="services-grid">
@@ -87,7 +87,6 @@ export default function Services() {
                 </div>
                 <div className="card-slide bottom-slide">
                   <p>{service.description}</p>
-                  <div className="service-arrow">→</div>
                 </div>
               </div>
             </div>

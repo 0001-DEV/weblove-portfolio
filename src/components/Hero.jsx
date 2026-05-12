@@ -52,7 +52,7 @@ export default function Hero() {
           <h1 ref={titleRef} className="hero-title">
             I Build Digital
             <br />
-            <span className="gradient-text">Experiences</span>
+            <span>Experiences</span>
           </h1>
 
           <p ref={subtitleRef} className="hero-subtitle">

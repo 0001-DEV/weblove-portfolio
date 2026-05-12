@@ -58,7 +58,7 @@ export default function Testimonials() {
     <section ref={sectionRef} className="testimonials section">
       <div className="container">
         <h2 className="section-title">
-          What Clients <span className="gradient-text">Say</span>
+          What Clients Say
         </h2>
 
         <div className="testimonials-grid">
