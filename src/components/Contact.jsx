@@ -128,6 +128,7 @@ export default function Contact() {
 
             <div className="social-links">
               <a href="https://github.com/0001-DEV" className="social-link">GitHub</a>
+              <a href="https://wa.me/2348149706739" target="_blank" rel="noopener noreferrer" className="social-link">WhatsApp</a>
               <a href="#" className="social-link">LinkedIn</a>
               <a href="#" className="social-link">Twitter</a>
               <a href="#" className="social-link">Instagram</a>

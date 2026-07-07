@@ -1,30 +1,15 @@
 import { useEffect, useState } from 'react'
 
 export default function Modal() {
-  const [isVisible, setIsVisible] = useState(true)
+  const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
-    console.log('Modal mounted, isVisible:', isVisible)
-  }, [])
+    // Show modal after 2 seconds on page load
+    const timer = setTimeout(() => {
+      setIsVisible(true)
+    }, 2000)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const heroSection = document.getElementById('hero')
-      if (heroSection) {
-        const heroBottom = heroSection.offsetTop + heroSection.offsetHeight
-        const currentScroll = window.scrollY
-        
-        // Show modal only while in hero section
-        if (currentScroll < heroBottom) {
-          setIsVisible(true)
-        } else {
-          setIsVisible(false)
-        }
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => clearTimeout(timer)
   }, [])
 
   return (
