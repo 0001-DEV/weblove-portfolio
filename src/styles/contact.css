@@ -129,6 +129,13 @@
   font-size: 1rem;
 }
 
+.info-item a[href*="wa.me"] {
+  text-decoration: underline;
+  text-decoration-color: var(--accent-1);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
 .info-item a:hover {
   color: var(--accent-1);
   transform: translateX(5px);
