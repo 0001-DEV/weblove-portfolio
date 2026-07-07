@@ -153,7 +153,8 @@
   .nav-menu {
     position: absolute;
     top: 70px;
-    left: 0;
+    right: 0;
+    left: auto;
     width: 70%;
     flex-direction: column;
     background: rgba(0, 0, 0, 0.98);
