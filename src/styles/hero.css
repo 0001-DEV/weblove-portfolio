@@ -64,6 +64,7 @@
   font-size: 0.9rem;
   color: #fc4c7e;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -282,6 +283,10 @@
 @media (max-width: 768px) {
   .hero {
     padding-top: 60px;
+  }
+
+  .hero-badge {
+    margin-bottom: 30px;
   }
 
   .hero-title {
