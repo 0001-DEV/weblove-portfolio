@@ -122,7 +122,7 @@ export default function Contact() {
               <div className="info-icon">💬</div>
               <div>
                 <h4>WhatsApp</h4>
-                <a href="https://wa.me/2348149706739" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+                <a href="https://wa.me/2348149706739" target="_blank" rel="noopener noreferrer">Click to start a Chat</a>
               </div>
             </div>
 
